@@ -16,7 +16,7 @@ function App() {
   return (
     <Router basename="/spa-site">
       <Navbar />
-      <div style={{ paddingTop: '80px' }}>
+      <div className="main" style={{ paddingTop: '80px' }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
