@@ -7,8 +7,8 @@ const ProductDetailA = () => {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', marginTop: '2rem' }}>
                 {/* Image Section */}
                 <div id="pdp-a-image-container">
-                    <div style={{ width: '100%', height: '400px', background: '#e2e8f0', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <span style={{ color: '#94a3b8', fontSize: '1.5rem' }}>Product Image A</span>
+                    <div style={{ width: '100%', height: '400px', background: '#e2e8f0', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+                        <img src="/spa-site/images/products/sleek-headset.png" alt="Sleek Headset" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                     </div>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1rem', marginTop: '1rem' }}>
                         {[1, 2, 3, 4].map(i => (

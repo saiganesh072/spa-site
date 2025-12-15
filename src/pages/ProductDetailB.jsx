@@ -6,8 +6,10 @@ const ProductDetailB = () => {
         <div id="pdp-b-page" style={{ paddingTop: '80px' }}>
 
             {/* Full Width Banner */}
-            <div style={{ height: '60vh', background: '#1e293b', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', position: 'relative' }} id="pdp-b-hero">
-                <div className="container text-center">
+            {/* Full Width Banner */}
+            <div style={{ height: '60vh', background: 'url(/spa-site/images/products/smart-watch.png) center/cover no-repeat', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', position: 'relative' }} id="pdp-b-hero">
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(15, 23, 42, 0.7)' }}></div>
+                <div className="container text-center" style={{ position: 'relative', zIndex: 2 }}>
                     <h1 style={{ fontSize: '4rem', marginBottom: '1rem' }}>Smart Watch X</h1>
                     <p style={{ fontSize: '1.5rem', opacity: 0.8 }}>The future on your wrist.</p>
                 </div>
