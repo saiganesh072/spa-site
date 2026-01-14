@@ -11,10 +11,15 @@ import ProductDetailB from './pages/ProductDetailB';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import OrderConfirmation from './pages/OrderConfirmation';
+import useAdobeTargetView from './hooks/useAdobeTargetView';
 
-function App() {
+// Inner component that uses the Adobe Target hook (must be inside Router)
+function AppContent() {
+  // Trigger Adobe Target view on every route change
+  useAdobeTargetView();
+
   return (
-    <Router basename="/spa-site">
+    <>
       <Navbar />
       <div className="main" style={{ paddingTop: '80px' }}>
         <Routes>
@@ -30,6 +35,14 @@ function App() {
           <Route path="/confirmation" element={<OrderConfirmation />} />
         </Routes>
       </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router basename="/spa-site">
+      <AppContent />
     </Router>
   );
 }
